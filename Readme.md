@@ -1,14 +1,14 @@
 # Remediation scripts
 
-In this repo, you will be able to find examples of Remediation scripts shared by the Riverbed Community
+In this repo, you will be able to find examples of Remediation scripts shared by the Aternity Community
 
 Related links:
 
 - Ask the community: https://community.riverbed.com
-- Watch how to Improve Service Desk KPIs with SteelCentral Automated Remediation: https://www.youtube.com/watch?v=01GPFS21A9E
+- Watch how to Improve Service Desk KPIs with Aternity Automated Remediation: https://www.youtube.com/watch?v=01GPFS21A9E
 - Read the manual https://help.aternity.com/search?facetreset=yes&q=remediation
 - Share ideas https://aternity.ideas.riverbed.com 
-- Try Aternity http://riverbed.com/try-aternity
+- Try Aternity https://www.aternity.com/free-trial/
 
 ## How to contribute
 
@@ -41,7 +41,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 Output example:
 
 ```output
-    Directory: C:\Riverbed-Community-Toolkit\Aternity\Remediation
+    Directory: C:\Aternity\Remediation-Scripts-Library
 
 
 Mode                LastWriteTime         Length Name
@@ -71,7 +71,7 @@ Example:
 Output example:
 
 ```output
-    Directory: C:\Riverbed-Community-Toolkit\Aternity\Remediation\Signed
+    Directory: C:\Aternity\Remediation-Scripts-Library\Signed
 
 
 SignerCertificate                         Status     Path
@@ -87,7 +87,7 @@ Find the User test device (ex. type the device name in the Search bar), open the
 
 On the signing machine:
 
-- step 1: [Download](https://github.com/riverbed/Riverbed-Community-Toolkit/archive/master.zip) the kit archive and extract all in C:\
+- step 1: [Download](https://github.com/Aternity/Remediation-Scripts-Library/archive/master.zip) the kit archive and extract all in C:\
 
 - step 2: Launch PowerShell as Administrator to prepare signing cert and sign a script
 
@@ -95,7 +95,7 @@ On the signing machine:
 # Depending on the environment the following line is not required. It sets the execution policy to be able to execute .ps1 script
 Set-ExecutionPolicy Unrestricted -Scope Process
 #
-Set-Location C:\Riverbed-Community-Toolkit-master\Aternity\Remediation
+Set-Location C:\Aternity\Remediation-Scripts-Library
 .\Prepare-RemediationSigning.ps1
 New-Item -Type Directory Signed
 .\Sign-RemediationScript.ps1 -Source .\Network\Remediation-DNS-ClearCache.ps1 -Destination .\Signed\Remediation-DNS-ClearCache-signed.ps1
