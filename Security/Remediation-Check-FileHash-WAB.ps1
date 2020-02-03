@@ -5,7 +5,7 @@
 	Check the MD5 file hash of powerpoint
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

@@ -7,7 +7,7 @@
 	Tested on Windows 10
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

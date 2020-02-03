@@ -9,7 +9,7 @@
 	* https://www.ibm.com/developerworks/community/groups/service/html/communitystart?communityUuid=ed951cf8-66d9-481a-a9dc-3454999d7758
 	
 	Aternity References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

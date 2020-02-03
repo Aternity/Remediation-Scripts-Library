@@ -5,7 +5,7 @@
 	Perform a Repair Volume scan and fix errors online
 	
 	Aternity References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

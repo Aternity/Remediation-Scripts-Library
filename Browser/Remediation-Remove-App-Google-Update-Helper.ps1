@@ -5,7 +5,7 @@
 	Uninstall the software using MSI
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

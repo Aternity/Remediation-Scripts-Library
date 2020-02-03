@@ -5,7 +5,7 @@
 	Disable optimization on the SteelHead mobile agent
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

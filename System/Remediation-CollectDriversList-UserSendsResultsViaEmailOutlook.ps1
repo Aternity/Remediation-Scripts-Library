@@ -5,7 +5,7 @@
 .DESCRIPTION
 
 	Collect the list of drivers installed on the machine and prepare an email in Outlook to send the results.
-    The user will have to press “send” in Outlook.
+    The user will have to press ï¿½sendï¿½ in Outlook.
 
     This remediation accepts a parameter to override the recipient email address. The default can be customized in this script ("it-servicedesk@yourcompany.com")
     
@@ -14,7 +14,7 @@
     Tested on Windows 10 / Office 16
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
     * https://support.office.com/en-us/article/Command-line-switches-for-Microsoft-Office-products-079164CD-4EF5-4178-B235-441737DEB3A6
 

@@ -5,7 +5,7 @@
 	Patch FinApp2 problem on General Ledger. Fix temp folder permissions
  	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

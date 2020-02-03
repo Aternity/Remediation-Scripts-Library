@@ -11,7 +11,7 @@
     Aternity Agent requirement: 12.0.1.128 or later
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
     * https://support.office.com/en-us/article/Command-line-switches-for-Microsoft-Office-products-079164CD-4EF5-4178-B235-441737DEB3A6
 

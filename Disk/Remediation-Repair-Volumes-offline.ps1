@@ -5,7 +5,7 @@
 	If possible perform an offline scan and fix of volumes, or schedule at next reboot (ex. system disk).
 		
 	Aternity References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

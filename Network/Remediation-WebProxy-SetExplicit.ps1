@@ -7,7 +7,7 @@
     Require Aternity Agent 12.0.1.128 or later
 
 	Aternity References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

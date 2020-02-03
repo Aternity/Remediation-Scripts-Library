@@ -8,7 +8,7 @@
     - $siteurl: Default site url for Webex. Example '"riverbed.webex.com"
 	 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
     * https://help.webex.com/en-us/WBX21799/Are-Admin-Rights-Required-to-Install-the-Webex-Meeting-Manager-Software
 	* https://help.webex.com/en-us/WBX000026378/Meeting-Services-Removal-Tool

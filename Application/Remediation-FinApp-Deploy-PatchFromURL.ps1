@@ -5,7 +5,7 @@
 	Download from internal webserver and install patch06 for FinApp (custom Desktop application) which comes as a binary (.exe)
 	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

@@ -8,7 +8,7 @@
 	
 	References:
 	* https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/lodctr
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE

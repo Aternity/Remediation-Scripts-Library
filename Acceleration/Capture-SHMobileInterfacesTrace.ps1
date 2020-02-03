@@ -5,7 +5,7 @@
 	Launch a network capture on the SteelHead Mobile agent 
  	
 	References:
-	* https://www.riverbed.com
+	* https://www.aternity.com
 	* https://help.aternity.com/search?facetreset=yes&q=remediation
 
 .EXAMPLE
