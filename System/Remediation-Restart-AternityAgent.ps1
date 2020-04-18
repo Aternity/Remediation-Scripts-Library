@@ -2,7 +2,7 @@
 .Synopsis
    Aternity - Remediation Script: Restart-AternityAgent
 .DESCRIPTION
-	Restart Aternity agent Service (A180AA)
+	Restart Aternity agent Service (A180WD)
 	Use case: fix agent stuck issue
 	Tested on Windows 10
 	
@@ -30,8 +30,8 @@ try
 		# 	Clear-DnsClientCache
 		# 	$result="DNS Cache Cleared"
 
-Restart-Service -Name A180AA -Force -ErrorAction Stop
-$result = Get-Service A180AA | Out-String
+Restart-Service -Name A180WD -Force -ErrorAction Stop
+$result = Get-Service A180WD | Out-String
 
 	#endregion
 
