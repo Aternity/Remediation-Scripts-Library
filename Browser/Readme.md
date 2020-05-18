@@ -14,7 +14,7 @@ In this scripts $BROWSER_NAME = $ARGS[0] is only being used to clear the cache.
 ## OS checks & cache path for browsers
 OS checks are being made using caption from WMI Objects. Caption works on Windows 7, windows 8 as well as windows 10. 
 In the scripts IE browser has been used to tackle different location of a cache. 
-Browser paths are variablzed and can be changes depeding on the use case.
+Browser paths are variablized and can be changes depeding on the use case.
  
 
 
