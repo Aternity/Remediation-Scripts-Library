@@ -7,10 +7,10 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 
 ## USAGE
 `````
-Enable
+Enable-DNS-Operational-Windows-Logs.ps1
 `````
 Depending on the use case - this script can be used for Custom data or any other custom monitors. Easiet way is to create a remediation action in Aternity to enable DNS Operational Logs. 
 `````
-Disable DNS Event Logs
+Disable-DNS-Operational-Windows-Logs.ps1
 `````
 Create another remediation action to disable the DNS event logs.
