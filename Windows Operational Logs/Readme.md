@@ -2,7 +2,9 @@
 Enabling Windows DNS Operations logs provide insights on queries that may be of an interest to diagnose issues from Endpoints. 
 Disabling Windows DNS Operations logs on Endpoints. 
 Follow the document from microsoft to see more details on which events are of an interest to then monitor using Health Events. 
+
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn800669(v=ws.11)
+
 ## USAGE
 `````
 Enable
