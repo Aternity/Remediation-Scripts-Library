@@ -5,7 +5,7 @@ try{
     #write-output $ARGS
     # Defining Arguments to be passed into variables to execute actions
     $BROWSER_NAME = $ARGS[0]
-    $OS_NAME = $ARGS[1]
+    #$OS_NAME = $ARGS[1] - OS checks are being done for IE only - rest of the browsers have the same location for cache. 
 
     #Setting Global Result Varaible
     $result = ""
