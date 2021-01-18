@@ -20,10 +20,11 @@
 	example : 8.8.8.8;www.aternity.com;10
 
 .VERISON
-	V1.0
+	V1.1
 
 .DATE
-	Date : 12/10/2020
+	Date : 12/10/2020 V1.0 : creation
+	Date : 01/18/2021 V1.1 : Add a DNS clear cache to force a DNS request
 #>
 
 #Variables#
@@ -60,6 +61,8 @@ try
 	#Test
 		while ($i -ne $numberoftests)
 		{
+			# Add a clear cache in order to force a DNS request
+			Clear-DnsClientCache
 			$measurement = Measure-Command {Resolve-DnsName $dnsName -Server "$($dnsserver)" -Type A}
 			$totalmeasurement += $measurement.TotalSeconds
 			#write-host $dnsserver $dnsName $measurement.TotalSeconds
