@@ -20,22 +20,25 @@
 	Session is not persistant.
 	You need to launch the stop command with the associated script
 	you need to use etl2pcapng to load data in wireshark You can download etl2pcapng from https://github.com/microsoft/etl2pcapng
-	Parameters to start= Start;;;200 MB;\\192.168.1.254\Disque dur\Trace
-	Parameters to stop= Stop;;;200 MB;\\192.168.1.254\Disque dur\Trace
+	Parameters to start= Start;;;200MB;\\192.168.1.254\Disque dur\Trace
+	Parameters to stop= Stop;;;200MB;\\192.168.1.254\Disque dur\Trace
+
+.Version 1.1 date : 2021/03/19
+	
 	
 #>
 # Parameters
 $Action = "Stop"
 $FolderToCreate = "c:\temp"
 $TraceFile="trace.etl"
-$TraceSize = "100 MB"
+$TraceSize = "100MB"
 $FileMode = "circular"
 $comment1 = "Trace started in"
 $comment2 = "Trace stopped"
 $comment3 = "file store localy"
 $Destination = ""
 $IPFilter =""
-
+$result =""
 #logic and script
 
 try
@@ -86,18 +89,36 @@ try
 	If($Action -eq "Start")
 		{
 		#Start network trace
-		netsh trace start overwrite=yes capture=yes report=no maxsize=$TraceSize filemode=$FileMode  tracefile=$FileToUse
-        $result = $comment1 + " a " + $TraceSize + " " + $FileMode  + "buffer stored in " +$FileToUse
-        }
+		#$result = c:\windows\system32\netsh.exe trace start overwrite=yes capture=yes report=no maxsize="$($TraceSize)" filemode="$($FileMode)" tracefile="$($FileToUse)"
+        if ([Environment]::Is64BitProcess) 
+			{
+			$result = netsh trace start overwrite=yes capture=yes report=no filemode=circular tracefile=c:\temp\trace.etl
+			$result +="`n" + $comment1 + " a " + $TraceSize + " " + $FileMode  + "buffer stored in " +$FileToUse
+			}
+		else
+			{
+			$result = C:\Windows\Sysnative\netsh trace start overwrite=yes capture=yes report=no filemode=circular tracefile=c:\temp\trace.etl
+			$result +="`n" + $comment1 + " a " + $TraceSize + " " + $FileMode  + "buffer stored in " +$FileToUse
+			}
+		}
 	else
 		{
-		#Stop network trace
-		netsh trace stop
+		if ([Environment]::Is64BitProcess) 
+			{
+			#Stop network trace
+			$result = netsh trace stop
+			}
+		else
+			{
+			#Stop network trace
+			$result = C:\Windows\Sysnative\netsh trace stop
+			}
+
 		# Verify if destination path exists. If exists , copy trace
 		If(Test-Path -path $Destination)
 		{ 
-			Copy-Item -Path $FileToUse -Destination $Destination
-			$result = $comment2 + " and copied in " + $Destination
+			Copy-Item -Path $FileToUse -Destination $Destination -Force
+			$result += $comment2 + " and copied in " + $Destination
 			}
 		else
 			{
@@ -107,10 +128,12 @@ try
         
 	#endregion
 	# Set Output message
-    [ActionExtensionsMethods.ActionExtensionsMethods]::SetScriptOutput($result)
+    Write-host $result
+	[ActionExtensionsMethods.ActionExtensionsMethods]::SetScriptOutput($result)
 }
 catch
 {
-    [ActionExtensionsMethods.ActionExtensionsMethods]::SetFailed($_.Exception.Message)
+    Write-host $_.Exception.Message
+	[ActionExtensionsMethods.ActionExtensionsMethods]::SetFailed($_.Exception.Message)
 }
 #EOF
